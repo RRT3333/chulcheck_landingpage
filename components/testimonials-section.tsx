@@ -3,7 +3,7 @@ export default function TestimonialsSection() {
     {
       quote: "인기 활동과 참여도 분석이 가능해져, 행사 기획이 수월해졌습니다",
       author: "전민우",
-      role: "국제 금융 학회",
+      role: "국제금융학회",
       university: "고려대학교",
     },
     {

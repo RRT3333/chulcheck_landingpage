@@ -32,7 +32,7 @@ export default function ProblemSection() {
             출첵은 동아리 운영의 가장 귀찮은 출석 문제를 해결합니다
           </h2>
           <p className="text-slate-700 font-noto text-xl max-w-2xl mx-auto">
-            <span className="font-bold text-primary">수기 출석 관리, 이제 그만!</span> 출첵으로 출석 체크는 더 빠르게, 데이터는 더 정확하게.
+            <span className="font-bold text-primary">수기 출석 관리, 이제 그만!</span> 출첵으로 출석 체크는 더 빠르게, 데이터는 더 정확히.
           </p>
         </div>
 

@@ -32,7 +32,7 @@ export default function WorkflowSection() {
             출첵 사용 방법
           </h2>
           <p className="text-slate-600 font-noto text-lg max-w-2xl mx-auto">
-            출첵으로 출석체크를 시작하는 방법은 매우 간단합니다.
+            4단계만 따라하면 누구나 쉽게 시작할 수 있습니다. 지금 바로 시작해보세요!
           </p>
         </div>
 
@@ -54,24 +54,33 @@ export default function WorkflowSection() {
           ))}
         </div>
 
-        {/* Desktop view */}
-        <div className="hidden md:block relative">
-          <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gradient-to-b from-primary via-mint to-primary"></div>
-
-          <div className="space-y-24">
+        {/* Desktop view - 가로 레이아웃 */}
+        <div className="hidden md:block">
+          {/* 상단 라인 */}
+          <div className="relative h-1 bg-gradient-to-r from-primary via-mint to-primary mx-auto mb-8 rounded-full max-w-5xl">
+            {steps.map((_, index) => (
+              <div 
+                key={index} 
+                className="absolute top-1/2 -translate-y-1/2" 
+                style={{ left: `${(index * 100) / (steps.length - 1)}%` }}
+              >
+                <div className="w-4 h-4 bg-primary rounded-full"></div>
+              </div>
+            ))}
+          </div>
+          
+          {/* 단계별 카드 */}
+          <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {steps.map((step, index) => (
-              <div key={index} className="relative flex items-center">
-                <div className="flex-1"></div>
-
-                <div className="z-10 flex h-16 w-16 items-center justify-center rounded-full bg-white border-2 border-mint shadow-md">
-                  {step.icon}
+              <div key={index} className="bg-white rounded-xl p-6 shadow-sm text-center">
+                <div className="flex justify-center mb-4">
+                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center">
+                    {step.icon}
+                  </div>
                 </div>
-
-                <div className="flex-1 text-left pl-12">
-                  <span className="text-xs font-bold text-primary font-michroma block mb-1">STEP {index + 1}</span>
-                  <h3 className="text-xl font-bold text-slate-900 font-noto">{step.title}</h3>
-                  <p className="text-slate-600 font-noto text-base mt-2">{step.description}</p>
-                </div>
+                <span className="text-sm font-bold text-primary font-michroma block mb-2">STEP {index + 1}</span>
+                <h3 className="text-xl font-bold text-slate-900 font-noto mb-2">{step.title}</h3>
+                <p className="text-slate-600 font-noto">{step.description}</p>
               </div>
             ))}
           </div>

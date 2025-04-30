@@ -54,7 +54,7 @@ export default function ProblemSection() {
         <div className="mt-16 text-center">
           <div className="bg-primary rounded-2xl p-8 text-white shadow-lg">
             <p className="text-xl md:text-2xl font-medium font-noto">
-              "출첵은 가장 번거로운 출석과 운영 관리를 자동화하여<br className="hidden md:block" />
+              "가장 번거로운 출석과 운영 관리를 자동화하여<br className="hidden md:block" />
               <span className="font-bold">여러분이 진짜 중요한 활동에 집중할 수 있도록 도와드립니다."</span>
             </p>
           </div>

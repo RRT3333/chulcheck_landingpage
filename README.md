@@ -1,37 +1,45 @@
-# 출첵 (ChulCheck) - 동아리 출석체크 플랫폼
+# 출첵 (ChulCheck) - 랜딩 페이지
 
-출첵은 대학 동아리 및 소모임을 위한 간편한 출석 관리 시스템입니다. QR코드와 PIN 코드를 사용한 스마트한 출석체크, 실시간 통계 분석, 다양한 역할 관리 기능으로 동아리 운영을 효율적으로 도와줍니다.
+이 저장소는 출첵(ChulCheck) 서비스의 랜딩 페이지 코드를 포함하고 있습니다. 출첵은 대학 동아리 및 소모임을 위한 스마트한 출석 관리 솔루션입니다.
 
-![출첵 로고](public/placeholder-logo.svg)
+## 프로젝트 개요
 
-## 주요 기능
+이 랜딩 페이지는 출첵 서비스의 주요 기능과 가치를 소개하는 웹사이트입니다. Next.js, React, TypeScript 및 Tailwind CSS를 사용하여 구축되었습니다.
 
-- **QR코드/PIN 출석체크**: 각 세션마다 고유한 QR코드 생성 및 PIN 코드 부여
-- **실시간 통계**: 출석률, 지각률, 개인별 참여도를 시각적으로 분석
-- **다중 역할 관리**: 운영진과 일반 부원 간 자동 UI 분리
-- **CSV 데이터 내보내기**: 연명부와 출석 데이터를 손쉽게 다운로드
-- **간편한 부원 관리**: 부원 정보 관리 및 편집 기능
+## 주요 섹션
+
+랜딩 페이지는 다음과 같은 주요 섹션으로 구성되어 있습니다:
+
+- **Hero Section**: 서비스 소개 및 핵심 가치 제안
+- **Features Section**: 주요 기능 소개
+- **Problem Section**: 출첵이 해결하는 문제점
+- **Workflow Section**: 서비스 이용 방법 안내
+- **Testimonials Section**: 사용자 후기
+- **CTA Section**: 행동 유도 섹션
+- **Waitlist Section**: 얼리 액세스 대기자 등록
 
 ## 기술 스택
 
-- **Frontend**: Next.js, React, TypeScript
-- **Styling**: Tailwind CSS, Radix UI
-- **State Management**: React Hooks
-- **Authentication**: Next Auth
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **UI**: React 19
+- **Styling**: Tailwind CSS
+- **Components**: Radix UI
+- **Icons**: Lucide React
 
-## 시작하기
+## 개발 환경 설정
 
 ### 사전 요구사항
 
 - Node.js 18 이상
 - pnpm 패키지 관리자
 
-### 설치
+### 설치 및 실행
 
 1. 저장소 클론
    ```bash
-   git clone https://github.com/your-username/chulcheck.git
-   cd chulcheck
+   git clone https://github.com/your-username/chulcheck-landing.git
+   cd chulcheck-landing
    ```
 
 2. 의존성 설치
@@ -39,18 +47,12 @@
    pnpm install
    ```
 
-3. 환경 변수 설정
-   ```bash
-   cp .env.example .env.local
-   # .env.local 파일을 열고 필요한 환경 변수를 설정하세요
-   ```
-
-4. 개발 서버 실행
+3. 개발 서버 실행
    ```bash
    pnpm dev
    ```
 
-5. 브라우저에서 `http://localhost:3000` 접속
+4. 브라우저에서 `http://localhost:3000` 접속
 
 ### 빌드 및 배포
 
@@ -64,18 +66,18 @@ pnpm start
 
 ```
 /app          - Next.js 앱 라우터
-/components   - 재사용 가능한 UI 컴포넌트
-/lib          - 유틸리티 함수 및 공통 로직
-/public       - 정적 파일 (이미지, 폰트 등)
+/components   - 랜딩 페이지의 각 섹션 컴포넌트
+/public       - 정적 파일 (이미지, 로고 등)
 /styles       - 전역 스타일
+/lib          - 유틸리티 함수
 /hooks        - 커스텀 React 훅
 ```
 
 ## SEO 및 소셜 미디어 공유 설정
 
-이 프로젝트는 검색 엔진 최적화(SEO) 및 소셜 미디어 공유를 위한 다양한 메타 태그가 설정되어 있습니다:
+이 랜딩 페이지는 검색 엔진 최적화(SEO) 및 소셜 미디어 공유를 위한 메타 태그 설정이 포함되어 있습니다:
 
-- **메타데이터**: title, description, keywords 등 기본 메타 정보
+- **메타데이터**: 제목, 설명, 키워드 등 기본 메타 정보
 - **Open Graph 태그**: 페이스북, 카카오톡 등에서 공유 시 표시되는 정보
 - **Twitter Card**: 트위터에서 공유 시 표시되는 정보
 
@@ -85,8 +87,12 @@ pnpm start
 
 **중요**: 위 이미지 파일들을 적절한 디자인으로 제작하여 추가해야 합니다.
 
+## 향후 계획
+- 배포 및 SEO 테스트
+- waitlist backend 연결
+- email 양식 (출시안내) 제작
 
-## 감사의 말
+## Tech Stack
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)

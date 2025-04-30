@@ -71,21 +71,20 @@ pnpm start
 /hooks        - 커스텀 React 훅
 ```
 
-## 기여하기
+## SEO 및 소셜 미디어 공유 설정
 
-1. 이 저장소를 Fork 합니다
-2. 새로운 Branch를 생성합니다 (`git checkout -b feature/amazing-feature`)
-3. 변경사항을 Commit 합니다 (`git commit -m 'Add some amazing feature'`)
-4. Branch에 Push 합니다 (`git push origin feature/amazing-feature`)
-5. Pull Request를 생성합니다
+이 프로젝트는 검색 엔진 최적화(SEO) 및 소셜 미디어 공유를 위한 다양한 메타 태그가 설정되어 있습니다:
 
-## 라이선스
+- **메타데이터**: title, description, keywords 등 기본 메타 정보
+- **Open Graph 태그**: 페이스북, 카카오톡 등에서 공유 시 표시되는 정보
+- **Twitter Card**: 트위터에서 공유 시 표시되는 정보
 
-이 프로젝트는 MIT 라이선스로 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요.
+**소셜 미디어 이미지 파일**:
+- `public/og-image.png`: 소셜 미디어 공유용 이미지 (1200x630px 권장)
+- `public/twitter-image.png`: 트위터 공유용 이미지 (1200x630px 권장)
 
-## 연락처
+**중요**: 위 이미지 파일들을 적절한 디자인으로 제작하여 추가해야 합니다.
 
-프로젝트 관리자: 출첵 팀 - chulcheck@example.com
 
 ## 감사의 말
 

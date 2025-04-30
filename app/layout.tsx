@@ -1,5 +1,12 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 export const metadata: Metadata = {
   title: '출첵 (ChulCheck) - 동아리 출석체크 플랫폼',
@@ -41,10 +48,6 @@ export const metadata: Metadata = {
     description: '대학 동아리를 위한 스마트한 출석체크 솔루션',
     images: ['/twitter-image.png'],
     creator: '@chulcheck',
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
   },
   robots: {
     index: true,

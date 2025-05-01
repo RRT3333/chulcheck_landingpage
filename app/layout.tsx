@@ -26,6 +26,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    apple: [
+      { url: '/chulcheck_kr_logo.png', sizes: '180x180', type: 'image/png' }
+    ]
+  },
   openGraph: {
     title: '출첵 (ChulCheck) - 동아리 출석체크 플랫폼',
     description: '대학 동아리를 위한 스마트한 출석체크 솔루션. QR코드와 PIN으로 간편하게 출석체크하고, 실시간 통계를 확인하세요.',
@@ -62,6 +70,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/chulcheck_kr_logo.png" />
+      </head>
       <body>{children}</body>
     </html>
   )

@@ -22,7 +22,8 @@ export default function HeroSection() {
             </h1>
 
             <p className="mb-6 sm:mb-8 text-base sm:text-lg text-slate-600 font-noto md:text-xl max-w-xl">
-              종이 출석부는 이제 그만! QR코드로 간편하게 출석하고 실시간으로 데이터를 분석하세요.
+              <span className="md:inline">종이 출석부는 이제 그만!</span> <br className="md:hidden" />
+              QR코드로 간편하게 출석하고<br />실시간으로 데이터를 분석하세요.
             </p>
 
             <div className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1.5 text-xs sm:text-sm font-bold text-slate-800 mb-6 sm:mb-8">

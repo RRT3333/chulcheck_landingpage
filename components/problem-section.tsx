@@ -28,11 +28,11 @@ export default function ProblemSection() {
     <section className="py-20 bg-slate-50 relative">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 font-michroma md:text-4xl mb-4">
-            출첵은 동아리 운영의 가장 귀찮은 출석 문제를 해결합니다
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 font-michroma mb-4">
+            출첵은 동아리 운영의<br className="md:hidden" /> 가장 귀찮은<br className="md:hidden" /> 출석 문제를 해결합니다
           </h2>
-          <p className="text-slate-700 font-noto text-xl max-w-2xl mx-auto">
-            <span className="font-bold text-primary">수기 출석 관리, 이제 그만!</span> 출첵으로 출석 체크는 더 빠르게, 데이터는 더 정확히.
+          <p className="text-slate-700 font-noto text-lg md:text-xl max-w-2xl mx-auto">
+            <span className="font-bold text-primary">수기 출석 관리,<br className="md:hidden" /> 이제 그만!</span><br className="md:hidden" /> 출첵으로 출석 체크는 더 빠르게,<br className="md:hidden" /> 데이터는 더 정확히.
           </p>
         </div>
 
@@ -40,22 +40,22 @@ export default function ProblemSection() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:border-primary/30 flex items-start"
+              className="bg-white rounded-xl p-4 md:p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:border-primary/30 flex items-start"
             >
-              <div className="mr-4 rounded-full bg-primary/10 p-3 flex-shrink-0">{problem.icon}</div>
+              <div className="mr-3 md:mr-4 rounded-full bg-primary/10 p-2 md:p-3 flex-shrink-0">{problem.icon}</div>
               <div>
-                <h3 className="text-xl font-bold text-primary font-noto mb-2">{problem.title}</h3>
-                <p className="text-slate-600 font-noto">{problem.description}</p>
+                <h3 className="text-lg md:text-xl font-bold text-primary font-noto mb-1 md:mb-2">{problem.title}</h3>
+                <p className="text-sm md:text-base text-slate-600 font-noto">{problem.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-primary rounded-2xl p-8 text-white shadow-lg">
-            <p className="text-xl md:text-2xl font-medium font-noto">
-              "가장 번거로운 출석과 운영 관리를 자동화하여<br className="hidden md:block" />
-              <span className="font-bold">여러분이 진짜 중요한 활동에 집중할 수 있도록 도와드립니다."</span>
+        <div className="mt-12 md:mt-16 text-center">
+          <div className="bg-primary rounded-2xl p-6 md:p-8 text-white shadow-lg">
+            <p className="text-lg md:text-xl lg:text-2xl font-medium font-noto">
+              "가장 번거로운 출석과<br className="md:hidden" /> 운영 관리를 자동화하여<br className="hidden md:block" />
+              <span className="font-bold">여러분이 진짜 중요한<br className="md:hidden" /> 활동에 집중할 수 있도록<br className="md:hidden" /> 도와드립니다."</span>
             </p>
           </div>
         </div>

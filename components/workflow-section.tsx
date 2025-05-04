@@ -40,7 +40,7 @@ export default function WorkflowSection() {
         <div className="md:hidden space-y-8">
           {steps.map((step, index) => (
             <div key={index} className="flex items-start bg-white rounded-xl p-4 shadow-sm">
-              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-mint/20 mr-4">
+              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mr-4">
                 {step.icon}
               </div>
               <div>

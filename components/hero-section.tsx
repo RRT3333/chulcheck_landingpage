@@ -57,7 +57,7 @@ export default function HeroSection() {
         </div>
 
         <div className="mt-12 sm:mt-16 flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-16 text-center">
-          <div className="flex flex-col items-center">
+          {/* <div className="flex flex-col items-center">
             <p className="text-2xl sm:text-3xl font-bold text-primary font-michroma">1,000+</p>
             <p className="text-xs sm:text-sm text-slate-600 font-noto">활성 동아리</p>
           </div>
@@ -68,6 +68,19 @@ export default function HeroSection() {
           <div className="flex flex-col items-center">
             <p className="text-2xl sm:text-3xl font-bold text-primary font-michroma">30+</p>
             <p className="text-xs sm:text-sm text-slate-600 font-noto">대학교</p>
+          </div> */}
+
+          <div className="flex flex-col items-center">
+            <p className="text-2xl sm:text-3xl font-bold text-primary font-michroma">100+</p>
+            <p className="text-xs sm:text-sm text-slate-600 font-noto">대기자수</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="text-2xl sm:text-3xl font-bold text-primary font-michroma">2주 이내</p>
+            <p className="text-xs sm:text-sm text-slate-600 font-noto">출시예정</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <p className="text-2xl sm:text-3xl font-bold text-primary font-michroma">무료</p>
+            <p className="text-xs sm:text-sm text-slate-600 font-noto">얼리 액세스</p>
           </div>
         </div>
       </div>

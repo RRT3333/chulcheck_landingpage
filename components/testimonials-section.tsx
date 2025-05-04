@@ -32,8 +32,8 @@ export default function TestimonialsSection() {
 
         <div className="grid gap-3 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="rounded-2xl bg-slate-50 p-3 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-2 text-secondary">
+            <div key={index} className="rounded-2xl bg-slate-50 p-3 md:p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="mb-2 md:mb-4 text-secondary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -44,20 +44,20 @@ export default function TestimonialsSection() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="h-7 w-7 opacity-50"
+                  className="h-7 w-7 md:h-10 md:w-10 opacity-50"
                 >
                   <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
                   <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
                 </svg>
               </div>
-              <p className="mb-3 text-slate-600 font-noto text-sm italic">"{testimonial.quote}"</p>
+              <p className="mb-3 md:mb-6 text-slate-600 font-noto text-sm md:text-lg italic">"{testimonial.quote}"</p>
               <div className="flex items-center">
-                <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-2">
+                <div className="h-8 w-8 md:h-10 md:w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold mr-2 md:mr-3">
                   {testimonial.author.charAt(0)}
                 </div>
                 <div>
-                  <p className="font-bold text-slate-900 font-noto text-sm">{testimonial.author}</p>
-                  <p className="text-xs text-slate-500 font-noto">
+                  <p className="font-bold text-slate-900 font-noto text-sm md:text-base">{testimonial.author}</p>
+                  <p className="text-xs md:text-sm text-slate-500 font-noto">
                     {testimonial.role} · {testimonial.university}
                   </p>
                 </div>

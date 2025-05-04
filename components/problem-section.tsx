@@ -36,24 +36,24 @@ export default function ProblemSection() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-3 md:grid-cols-2">
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-4 md:p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:border-primary/30 flex items-start"
+              className="bg-white rounded-xl p-2 md:p-6 border border-slate-200 shadow-sm hover:shadow-md transition-all hover:border-primary/30 flex items-start"
             >
-              <div className="mr-3 md:mr-4 rounded-full bg-primary/10 p-2 md:p-3 flex-shrink-0">{problem.icon}</div>
+              <div className="mr-2 md:mr-4 rounded-full bg-primary/10 p-1.5 md:p-3 flex-shrink-0">{problem.icon}</div>
               <div>
-                <h3 className="text-lg md:text-xl font-bold text-primary font-noto mb-1 md:mb-2">{problem.title}</h3>
-                <p className="text-sm md:text-base text-slate-600 font-noto">{problem.description}</p>
+                <h3 className="text-base md:text-xl font-bold text-primary font-noto mb-0.5 md:mb-2">{problem.title}</h3>
+                <p className="text-xs md:text-base text-slate-600 font-noto leading-tight">{problem.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 md:mt-16 text-center">
-          <div className="bg-primary rounded-2xl p-6 md:p-8 text-white shadow-lg">
-            <p className="text-lg md:text-xl lg:text-2xl font-medium font-noto">
+        <div className="mt-8 md:mt-16 text-center">
+          <div className="bg-primary rounded-2xl p-4 md:p-8 text-white shadow-lg">
+            <p className="text-base md:text-xl lg:text-2xl font-medium font-noto leading-tight">
               "가장 번거로운 출석과<br className="md:hidden" /> 운영 관리를 자동화하여<br className="hidden md:block" />
               <span className="font-bold">여러분이 진짜 중요한<br className="md:hidden" /> 활동에 집중할 수 있도록<br className="md:hidden" /> 도와드립니다."</span>
             </p>

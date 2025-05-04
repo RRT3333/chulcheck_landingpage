@@ -37,18 +37,18 @@ export default function WorkflowSection() {
         </div>
 
         {/* Mobile view */}
-        <div className="md:hidden space-y-8">
+        <div className="md:hidden space-y-3">
           {steps.map((step, index) => (
-            <div key={index} className="flex items-start bg-white rounded-xl p-4 shadow-sm">
-              <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mr-4">
+            <div key={index} className="flex items-start bg-white rounded-xl p-2 shadow-sm">
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 mr-2">
                 {step.icon}
               </div>
               <div>
                 <div className="flex items-center">
-                  <span className="text-xs font-bold text-primary font-michroma mr-2">STEP {index + 1}</span>
-                  <h3 className="text-xl font-bold text-slate-900 font-noto">{step.title}</h3>
+                  <span className="text-xs font-bold text-primary font-michroma mr-1">STEP {index + 1}</span>
+                  <h3 className="text-base font-bold text-slate-900 font-noto">{step.title}</h3>
                 </div>
-                <p className="text-slate-600 font-noto text-base mt-1">{step.description}</p>
+                <p className="text-slate-600 font-noto text-sm mt-0.5 leading-tight">{step.description}</p>
               </div>
             </div>
           ))}

@@ -1,7 +1,31 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { useState } from "react"
+import { API_BASE_URL } from "@/config/api"
 
 export default function WaitlistSection() {
+  const [email, setEmail] = useState("");
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return;
+    try {
+      const res = await fetch(`${API_BASE_URL}/save/${encodeURIComponent(email)}`, {
+        method: 'POST',
+      });
+      if (res.ok) {
+        alert("등록되었습니다");
+        setEmail("");
+      } else {
+        alert("서버 오류 또는 등록 실패: " + res.status);
+      }
+    } catch (err) {
+      alert("네트워크 오류: " + JSON.stringify(err));
+      console.error(err);
+    }
+  };
+
   return (
     <section id="waitlist" className="py-16 sm:py-20 md:py-24 lg:py-28 bg-white border-t border-slate-100">
       <div className="container mx-auto px-4 md:px-6">
@@ -17,12 +41,14 @@ export default function WaitlistSection() {
           </p>
 
           <div className="bg-slate-50 p-6 sm:p-8 rounded-2xl shadow-sm mb-8 sm:mb-10">
-            <form className="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
+            <form className="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto" onSubmit={handleSubmit}>
               <Input 
                 type="email" 
                 placeholder="이메일 주소" 
                 className="flex-1 font-noto h-11 sm:h-12 md:h-14 text-sm sm:text-base" 
                 required 
+                value={email}
+                onChange={e => setEmail(e.target.value)}
               />
               <Button 
                 type="submit" 

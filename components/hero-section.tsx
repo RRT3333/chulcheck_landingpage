@@ -39,20 +39,19 @@ export default function HeroSection() {
               </Link>
             </div>
           </div>
-
-          <div className="flex-1 relative w-full max-w-[280px] md:max-w-none">
-            <div className="relative z-10 bg-white rounded-2xl shadow-lg overflow-hidden p-4 rotate-2">
-              <div className="bg-primary rounded-xl p-6 aspect-[9/16] w-full md:w-[280px] flex flex-col items-center justify-center">
-                <QrCode className="w-24 sm:w-32 h-24 sm:h-32 text-white mb-4" />
-                <div className="text-white font-noto text-center">
-                  <p className="text-xs mb-1">동아리명: 프로그래밍 동아리</p>
-                  <p className="text-xs mb-3">세션: 주간 미팅 #42</p>
-                  <p className="text-sm font-bold">QR코드를 스캔하세요</p>
+          <div className="flex-1 flex justify-center">
+            <div className="relative w-full max-w-[310px]">
+              <div className="relative z-10 bg-white max-w-[350px] rounded-2xl shadow-lg overflow-hidden p-4 rotate-2">
+                <div className="bg-primary rounded-xl p-6 aspect-[9/16] w-full md:w-[280px] flex flex-col items-center justify-center">
+                  <QrCode className="w-24 sm:w-32 h-24 sm:h-32 text-white mb-4" />
+                  <div className="text-white font-noto text-center">
+                    <p className="text-xs mb-1">동아리명: 프로그래밍 동아리</p>
+                    <p className="text-xs mb-3">세션: 주간 미팅 #42</p>
+                    <p className="text-sm font-bold">QR코드를 스캔하세요</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-mint/30 rounded-full blur-2xl -z-10"></div>
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-xl -z-10"></div>
           </div>
         </div>
 

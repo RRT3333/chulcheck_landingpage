@@ -9,13 +9,27 @@
 ### 브랜드 컬러
 - **Primary Color**: 
   - 메인 컬러 (Primary)
+  - HEX: #2563EB
+  - HSL: 221, 83%, 53%
   - CSS Variable: `--primary`
   - 사용: CTA 버튼, 강조 텍스트, 아이콘
 
 - **Secondary Colors**:
-  - Mint: 민트 (액센트 컬러)
-  - 투명도 30%로 사용: `bg-mint/30`
-  - 사용: 배경 그라데이션, 장식 요소
+  - Mint: 밝은 블루 민트 (액센트 컬러)
+    - HEX: #93C5FD
+    - HSL: 213, 95%, 80%
+    - CSS Variable: `--mint`
+    - 투명도 30%로 사용: `bg-mint/30`
+    - 사용: 배경 그라데이션, 장식 요소
+  - Purple: 아주 연한 블루 퍼플 (서브 컬러)
+    - HEX: #DBEAFE
+    - HSL: 210, 100%, 97%
+    - CSS Variable: `--purple`
+    - 사용: 배경, 카드, 포인트 서브컬러
+
+- **Foreground**:
+  - Primary Foreground: #fff (흰색, 텍스트/아이콘)
+  - Mint/Purple Foreground: #2563EB (주 컬러, 텍스트/아이콘)
 
 ### 타이포그래피
 

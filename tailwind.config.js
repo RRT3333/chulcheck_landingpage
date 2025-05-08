@@ -24,16 +24,16 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#071ADD", // deep blue
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#2563EB", // blue-600
+          foreground: "#fff",
         },
         mint: {
-          DEFAULT: "#8EE4AF", // light mint
-          foreground: "#071ADD",
+          DEFAULT: "#93C5FD", // blue-300
+          foreground: "#2563EB",
         },
         purple: {
-          DEFAULT: "#B6A6FF", // soft purple
-          foreground: "#071ADD",
+          DEFAULT: "#DBEAFE", // blue-100
+          foreground: "#2563EB",
         },
         secondary: {
           DEFAULT: "#8EE4AF", // now using mint as secondary

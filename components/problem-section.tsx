@@ -29,11 +29,9 @@ export default function ProblemSection() {
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 font-michroma mb-4">
-            출첵은 동아리 운영의<br className="md:hidden" /> 가장 귀찮은<br className="md:hidden" /> 출석 문제를 해결합니다
+            매번 번거로운 출석체크<br className="md:hidden" /> 더이상 고민하지 마세요
           </h2>
-          <p className="text-slate-700 font-noto text-lg md:text-xl max-w-2xl mx-auto">
-            <span className="font-bold text-primary">수기 출석 관리,<br className="md:hidden" /> 이제 그만!</span><br className="md:hidden" /> 출첵으로 출석 체크는 더 빠르게,<br className="md:hidden" /> 데이터는 더 정확히.
-          </p>
+          <p className="text-base md:text-lg text-slate-600 font-noto mb-4">출석부터 명단 관리까지, 단번에 해결하세요.</p>
         </div>
 
         <div className="grid gap-3 md:grid-cols-2">
@@ -54,7 +52,7 @@ export default function ProblemSection() {
         <div className="mt-8 md:mt-16 text-center">
           <div className="bg-primary rounded-2xl p-4 md:p-8 text-white shadow-lg">
             <p className="text-base md:text-xl lg:text-2xl font-medium font-noto leading-tight">
-              "가장 번거로운 출석과<br className="md:hidden" /> 운영 관리를 자동화하여<br className="hidden md:block" />
+              "가장 번거로운 출석과<br className="md:hidden" /> 운영 관리를 자동화하여 <br className="hidden md:block" />
               <span className="font-bold">여러분이 진짜 중요한<br className="md:hidden" /> 활동에 집중할 수 있도록<br className="md:hidden" /> 도와드립니다."</span>
             </p>
           </div>
